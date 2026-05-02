@@ -44,7 +44,7 @@ if st.button("Predict Now"):
     # Tartiiba Model-ichi barbaadu (Total 9 features):
     # [Gender, Age, Hypertension, Heart_Disease, Smoking, BMI, HbA1c, Glucose, Residence]
     # Odeeffannoo nuti UI irratti hin qabneef 0 galchina.
-    features = np.array([[0, age, hypertension, heart_disease, 0, bmi, hba1c, glucose, 0]])
+    features = np.array([[0, age, hypertension, heart_disease, 0, bmi, hba1c, glucose]])
     
     # Madaallii gochuu
     prediction = model.predict(features)[0][0]
